@@ -53,7 +53,7 @@ function App() {
           <input type="text" value={url} onChange={handleUrlChange} />
           <button onClick={() => handleScrape('links')}>Scrape Links</button>
           <button onClick={() => handleScrape('images')}>Scrape Images</button>
-          <button onClick={() => handleScrape('metadata')}>Scrape Metadata</button>
+          <button onClick={() => handleScrape('tables')}>Scrape Tables</button>
         </div>
         <div className="output-box">
           <h2 className="label-output">Scraped Content:</h2>
@@ -62,7 +62,7 @@ function App() {
           </div>
           {output && (
             <div className="download-box">
-              <button onClick={handleDownload}>Download URLs</button>
+              <button onClick={handleDownload}>Download scraped info as text file</button>
             </div>
           )}
         </div>
