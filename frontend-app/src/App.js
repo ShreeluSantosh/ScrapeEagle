@@ -48,12 +48,20 @@ function App() {
     <div className="App">
       <h1 className="App-title">ScrapeVulture</h1>
       <div className="App-content">
+        <p align="center">
+          Welcome to ScrapeVulture! 🦅
+        </p>
+        <p align="center">
+          You can input any webpage's URL into the below input box, and get a list of all the links and image links within that webpage.
+        </p>
+        <p align="center">
+          Kindly do not use this tool for malicious purposes.
+        </p>
         <div className="input-box">
           <label>Enter URL:</label>
           <input type="text" value={url} onChange={handleUrlChange} />
           <button onClick={() => handleScrape('links')}>Scrape Links</button>
           <button onClick={() => handleScrape('images')}>Scrape Images</button>
-          <button onClick={() => handleScrape('tables')}>Scrape Tables</button>
         </div>
         <div className="output-box">
           <h2 className="label-output">Scraped Content:</h2>
@@ -62,7 +70,7 @@ function App() {
           </div>
           {output && (
             <div className="download-box">
-              <button onClick={handleDownload}>Download scraped info as text file</button>
+              <button onClick={handleDownload}>Download scraped links as text file</button>
             </div>
           )}
         </div>
