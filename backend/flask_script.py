@@ -16,20 +16,6 @@ def scrape_images(soup):
     images = [img.get('src') for img in soup.find_all('img')]
     return {"success": True, "data": images}
 
-def scrape_tables(soup):
-    # Extracting data from tables
-    tables_data = []
-    tables = soup.find_all('table')
-    for table in tables:
-        rows = table.find_all('tr')
-        table_data = []
-        for row in rows:
-            columns = row.find_all(['td', 'th'])
-            row_data = [column.text.strip() for column in columns]
-            table_data.append(row_data)
-        tables_data.append(table_data)
-    return {"success": True, "data": tables_data}
-
 def scrape_url(url, option='links'):
     try:
         # Send an HTTP request to the URL
@@ -44,10 +30,8 @@ def scrape_url(url, option='links'):
                 return scrape_links(soup)
             elif option == 'images':
                 return scrape_images(soup)
-            elif option == 'tables':
-                return scrape_tables(soup)
             else:
-                return {"success": False, "error": "Invalid option. Choose 'links', 'images', 'tables', or 'metadata'."}
+                return {"success": False, "error": "Invalid option. Choose 'links' or 'images'"}
         else:
             return {"success": False, "error": f"Failed to retrieve the page. Status code: {response.status_code}"}
     except Exception as e:
