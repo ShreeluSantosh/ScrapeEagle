@@ -1,16 +1,15 @@
 .App {
+  font-family: 'Arial', sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-title {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  background-color: #3498db; /* Choose your desired color */
+  color: #fff;
 }
 
 .App-header {
@@ -32,31 +31,65 @@
 
 .input-box,
 .output-box {
-  width: 100%; /* Set the width to cover the entire width of the webpage */
+  width: 80%; /* Set the width to cover the entire width of the webpage */
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ecf0f1;
   border: 2px solid black !important;
   padding: 10px;
   margin: 5px;
   background-color: #fff;
 }
 
+.input-box input {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+}
+
+.input-box button {
+  flex: 1; /* Each button takes equal width */
+  margin-right: 5px; /* Small margin between buttons */
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .output-box {
+  width: 80%;
   margin-top: 10px;
 }
 
 .label-output {
   margin-bottom: 8px;
+  color: #2ecc71;
 }
 
 .url-box {
   max-height: 200px;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
   overflow-y: scroll; /* Change to scroll to always show the scrollbar */
 }
 
-.App-link {
-  color: #61dafb;
+.download-box {
+  margin-top: 20px;
+}
+
+.download-box button {
+  padding: 10px 15px;
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 @keyframes App-logo-spin {
