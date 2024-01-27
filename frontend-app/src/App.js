@@ -57,6 +57,9 @@ function App() {
         <p align="center">
           Kindly do not use this tool for malicious purposes.
         </p>
+        <p align="center">
+          Credits: Shreelu Santosh
+        </p>
         <div className="input-box">
           <label>Enter URL:</label>
           <input type="text" value={url} onChange={handleUrlChange} />
