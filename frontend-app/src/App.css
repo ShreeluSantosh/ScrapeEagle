@@ -12,17 +12,6 @@
   color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-content {
   display: flex;
   flex-direction: column;
@@ -73,6 +62,8 @@
 
 .url-box {
   max-height: 200px;
+  width: 85%;
+  text-align: left;
   padding: 10px;
   border: 1px solid #bdc3c7;
   border-radius: 4px;
@@ -90,13 +81,4 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
