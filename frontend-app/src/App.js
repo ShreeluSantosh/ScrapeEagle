@@ -46,10 +46,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="App-title">ScrapeVulture</h1>
+      <h1 className="App-title">ScrapeEagle</h1>
       <div className="App-content">
         <p align="center">
-          Welcome to ScrapeVulture! 🦅
+          Welcome to ScrapeEagle! 🦅
         </p>
         <p align="center">
           You can input any webpage's URL into the below input box, and get a list of all the links and image links within that webpage.
