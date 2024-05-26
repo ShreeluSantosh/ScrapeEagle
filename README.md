@@ -1,4 +1,4 @@
-# ScrapeVulture
+# ScrapeEagle
 
 This is a web-based tool can scrape all the webpage links and image links from an inputted webpage link.
 
